@@ -7,19 +7,16 @@
 	<body>
 		<div class="container">  
 		  <form id="contact" action="" method="post">
-			<h3>Maal Counter</h3>
+			<h3>Mero Marriage Points Calculator</h3>
 			<h4>Good Luck !</h4>
 			<fieldset>
 				<div ng-app="myApp" ng-controller="myCtrl">
-					<h1 align="center"><b style="color:#FF0000">{{add()}}</b></h1><br/>
+					<div style="padding-bottom:10px;"><h1 align="center"><b style="color:#FF0000;">{{add()}}</b></h1></div>
 					<div style="padding-bottom:5px;"><select ng-model = "StatusNo" ng-options="x for x in status" style="width:200px; height:27px" autofocus></select></div>
 					<input ng-model = "playerNo" placeholder="Number of Players" type="text" tabindex="1" >
 					<input ng-model = "TotalMaal" placeholder="Total Maal" type="text" tabindex="3" >
 					<input ng-model = "MyMaal" placeholder="My Maal" type="text" tabindex="4" >
 				</div>
-			</fieldset>
-			<fieldset>
-				
 			</fieldset>
 			<fieldset>
 			  <button name="submit" type="submit" id="value-submit" ng-click="clear()">Clear</button>
